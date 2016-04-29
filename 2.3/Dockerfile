@@ -39,5 +39,7 @@ ENV PATH /opt/logstash/bin:$PATH
 
 COPY docker-entrypoint.sh /
 
+EXPOSE 14560
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["logstash", "agent"]
